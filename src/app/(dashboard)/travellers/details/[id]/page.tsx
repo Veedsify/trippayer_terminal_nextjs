@@ -34,7 +34,7 @@ function TravellersDetails() {
                   <div className="xl:col-span-3 border rounded-md p-4">
                     <div className="mb-5">
                       <Image
-                        src="/avatar.png"
+                        src="/avatar.jpg"
                         priority
                         width={200}
                         height={200}

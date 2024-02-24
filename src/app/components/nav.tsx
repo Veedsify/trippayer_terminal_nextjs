@@ -82,7 +82,7 @@ function Nav() {
             <li className="py-4 ml-6 relative" onClick={() => setMenu(true)}>
               <span className="cursor-pointer flex items-center gap-2 outline outline-1 outline-white rounded-3xl p-1 xl:pr-3">
                 <Image
-                  src="/avatar.png"
+                  src="/avatar.jpg"
                   alt="logo"
                   height={40}
                   width={40}
@@ -93,28 +93,28 @@ function Nav() {
                   {(user?.company_name).toUpperCase()}
                 </span>
 
-                  {menu && (
-                    <ul
-                      ref={ref}
-                      className="bg-white border transition-all text-black absolute w-full md:w-52 right-0 top-full rounded-md">
-                      <li>
-                        <Link href="/plans/upload" className="flex items-center gap-2 p-4 hover:bg-gray-200">
-                          <LucideUpload />
-                          <span className="font-medium">
-                            Upload
-                          </span>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/settings" className="flex items-center gap-2 p-4 hover:bg-gray-200">
-                          <LucideSettings />
-                          <span className="font-medium">
-                            Settings
-                          </span>
-                        </Link>
-                      </li>
-                    </ul>
-                  )}
+                {menu && (
+                  <ul
+                    ref={ref}
+                    className="bg-white border transition-all text-black absolute w-full md:w-52 right-0 top-full rounded-md">
+                    <li>
+                      <Link href="/plans/upload" className="flex items-center gap-2 p-4 hover:bg-gray-200">
+                        <LucideUpload />
+                        <span className="font-medium">
+                          Upload
+                        </span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/settings" className="flex items-center gap-2 p-4 hover:bg-gray-200">
+                        <LucideSettings />
+                        <span className="font-medium">
+                          Settings
+                        </span>
+                      </Link>
+                    </li>
+                  </ul>
+                )}
               </span>
             </li>
           </ul>

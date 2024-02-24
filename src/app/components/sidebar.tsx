@@ -41,7 +41,7 @@ function SideBar() {
     >
       <div className="flex items-center pl-4 py-4 border-b gap-4">
         <Image
-          src="/avatar.png"
+          src="/avatar.jpg"
           priority
           width={60}
           height={60}
