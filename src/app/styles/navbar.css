@@ -1,0 +1,7 @@
+.sidebar-drop-down.active {
+    height: auto;
+}
+
+.sidebar-drop-down {
+    height: 0;
+}

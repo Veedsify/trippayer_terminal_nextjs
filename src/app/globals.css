@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 95.5%;
+}
+
+.clean_bar::-webkit-scrollbar {
+    border-radius: 3px;
+    height: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background: transparent;
+}
+
+.clean_bar::-webkit-scrollbar-thumb {
+    background: rgb(16, 8, 59);
+}
+
+.clean_bar::-webkit-scrollbar-track {
+    background: rgba(207, 207, 207, 0.466);
+}

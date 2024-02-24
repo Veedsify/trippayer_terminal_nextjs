@@ -1,0 +1,18 @@
+const data = {
+    id: '1',
+    title: 'GIGM Motors',
+    park: "Festac (Maza-Maza)",
+    take_off_state: 'Lagos',
+    destination: 'Benni',
+    destination_park: "Park2",
+    take_off_date: '2023-01-20',
+    take_off_time: '14:00:59',
+    destination_date: '2023-01-21',
+    destination_time: ' 14:00:59',
+    bus_seats: '60',
+    bus_type: 'Luxury || Executive || Regular',
+    seaters_per_row: '4',
+    plate_number: 'ABC-123-DE',
+    fee: 35000,
+    estimated_time: '12 Hours 30 Minutes',
+}
