@@ -10,7 +10,7 @@ const ViewSubaccounts = async () => {
     const cookieStore = cookies()
     const token = cookieStore.get('token')
     const getSubaccounts = async () => {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}//bank/subaccount`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/bank/subaccount`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -41,12 +41,14 @@ const ViewSubaccounts = async () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr key={subaccounts._id}>
-                                        <td className="text-left border px-6 text-lg py-4">1</td>
-                                        <td className="text-left border px-6 text-lg py-4">{subaccounts.business_name}</td>
-                                        <td className="text-left border px-6 text-lg py-4">{subaccounts.account_number}</td>
-                                        <td className="text-left border px-6 text-lg py-4">{subaccounts.settlement_bank}</td>
-                                    </tr>
+                                    {subaccounts ? (
+                                        <tr key={subaccounts._id}>
+                                            <td className="text-left border px-6 text-lg py-4">1</td>
+                                            <td className="text-left border px-6 text-lg py-4">{subaccounts?.business_name}</td>
+                                            <td className="text-left border px-6 text-lg py-4">{subaccounts.account_number}</td>
+                                            <td className="text-left border px-6 text-lg py-4">{subaccounts.settlement_bank}</td>
+                                        </tr>
+                                    ) : ""}
                                 </tbody>
                             </table>
                         </div>
