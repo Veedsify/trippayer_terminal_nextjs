@@ -9,13 +9,13 @@ const ForgetPassword = () => {
           src="/logo2.png"
           alt="Logo"
           width={200}
-          height={200}
-          className="invert h-auto object-cover inline-block mb-10"
+          priority
+          height={35}
+          className="invert h-auto object-cover w-52 inline-block mb-10"
         />
         <form action="">
           <div className="md:w-[400px]">
-
-            <small className="p-2 mb-3 inline-block">Enter your email address and a reset link would be sent to you</small>
+            <small className="p-2 mb-3 text-center block">Enter your email address and a reset link would be sent to you</small>
             <input
               type="text"
               placeholder="Email Address"

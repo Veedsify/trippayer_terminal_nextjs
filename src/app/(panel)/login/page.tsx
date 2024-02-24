@@ -66,16 +66,13 @@ const LoginPage = () => {
   return (
     <div>
       <div className="flex min-h-screen flex-col items-center justify-center">
-        <div className="mx-auto w-[187px] h-[32px] relative mb-6">
-          <Image
-            src="/logo2.png"
-            alt="Logo"
-            priority
-            sizes="100px"
-            fill
-            className="invert mb-10"
-          />
-        </div>
+        <Image
+          src="/logo2.png"
+          alt="Logo"
+          width={200}
+          height={35}
+          className="invert mb-10 w-52 h-9"
+        />
         <form action="" onSubmit={handleLogin}>
           <div className="md:w-[400px]">
             <input
