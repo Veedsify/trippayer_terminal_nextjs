@@ -31,7 +31,6 @@ const LoginPage = () => {
 
     toast.loading("Logging in...")
     try {
-
       const res = await axiosConnection.post("/Company/signin", {
         company_login: loginData.email,
         password: loginData.password
@@ -45,12 +44,12 @@ const LoginPage = () => {
         document.cookie = `token=${res.data.token}`
         router.push("/")
       }
-    } catch (error) {
-      toast.dismiss()
+    } catch (error: any) {
+      toast.dismiss();
       swal({
         icon: "info",
         title: "Login Error",
-        text: "email or password is incorrect."
+        text: error?.res?.data?.message || error?.message
       })
     }
   }
