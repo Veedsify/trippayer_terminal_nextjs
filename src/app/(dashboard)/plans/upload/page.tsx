@@ -28,7 +28,6 @@ function UploadPlans() {
   const uploadFile = async () => {
     const formdata = new FormData();
     formdata.set('csv', file as Blob, file?.name as string);
-
     const res = await axiosConnection.post(file?.type == "csv"? "/file/csv" : "file/xlsx", formdata, {
       headers: {
         'Content-Type': 'multipart/form-data',
