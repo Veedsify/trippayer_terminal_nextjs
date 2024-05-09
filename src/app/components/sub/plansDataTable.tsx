@@ -123,7 +123,7 @@ const PlansDataTable = ({data}: { data?: any }) => {
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap border">
                                                 <div
-                                                    className="text-left text-sm text-gray-900 font-bold">{element.destination}</div>
+                                                    className="text-left text-sm text-gray-900 font-bold">{element.destination_state}</div>
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap border">
                                                 <div

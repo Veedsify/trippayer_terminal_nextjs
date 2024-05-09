@@ -47,7 +47,7 @@ const CompanyRegisterForm = () => {
                 "company_cac": registerDetails?.companyCac,
                 "company_website": registerDetails?.companyWebsite,
                 "number_of_buses": registerDetails?.companyBusNumber,
-            }).then((res) => {
+            }).then((res: any) => {
                 if (res.data.success && res.data.status === 200) {
                     toast.dismiss()
                     ref.current.reset();
@@ -61,7 +61,7 @@ const CompanyRegisterForm = () => {
                             },
                             "Login": {
                                 text: "Login",
-                                className:"bg-green-500 text-white"
+                                className: "bg-green-500 text-white"
                             },
                         },
                     }).then(() => {
@@ -71,9 +71,9 @@ const CompanyRegisterForm = () => {
                     toast.dismiss()
                     toast.error(res.data.message);
                 }
-            }).catch((err) => {
+            }).catch((err: any) => {
                 toast.dismiss()
-                toast.error(err.response.data.message);
+                toast.error(err?.res?.data?.message || err?.message);
             })
         }
     }
